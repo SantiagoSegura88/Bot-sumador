@@ -21,4 +21,15 @@ async def suma(ctx, num1:int, num2: int):
     suma = num1 + num2
     await ctx.send(f"las suma {num1} + {num2} = {suma}")
 
+@botsito.command()
+async def resta(ctx, num1:int, num2: int):
+    resta = num1 - num2
+    await ctx.send(f"las resta de {num1} - {num2} = {resta}")
+
+
+@botsito.command()
+async def multi(ctx, num1:int, num2: int):
+    multi = num1 * num2
+    await ctx.send(f"la multiplicacion de {num1} * {num2} = {multi}")
+
 botsito.run("")
